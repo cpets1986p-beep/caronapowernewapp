@@ -1,13 +1,12 @@
 import { Component,HostListener  } from '@angular/core';
 import { RouterLink,RouterLinkActive } from '@angular/router';
-import { CapitalizeFirstPipe } from '../shared/pipes/capitalize-first.pipe';
 import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLinkActive,CommonModule,RouterLink,CapitalizeFirstPipe],
+  imports: [RouterLinkActive,CommonModule,RouterLink],
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
 })

@@ -1,90 +1,135 @@
-<div class="body">
-<section  class="ng-container">
-    <div class="background-container">
-         <div class="text-call">
-    <h1>High Voltage Impulse Resistor</h1>
-    </div>
-    </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "High Voltage Impulse Generator Service & Spares Support - Carona Power Electrical Test Systems",
+  "author": "Carona Power Electrical Test Systems",
+  "datePublished": "2026-02-21"
+}
+</script>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="headtext">High Voltage Impulse Resistors</h1>
+    <p>Precision Wave-shaping and<br/> Measurement for HV Test Systems</p> 
+    <button class="btn-primary">Request a Quote</button>    
+    <a href="assets/brochures/Carona_Power_Brochure.pdf"
+   download="Carona_Power_Brochure.pdf"
+   class="btn-primary">
+   Download Datasheet
+   </a>
+  </div>
 </section>
-<section class="ng-container about-section">
-    <p class="overview-text">
-        Carona Power is engaged in manufacturing and supply of  the high voltage impulse resistor.
-A <b>High Voltage Impulse Resistor</b> is a specialized resistor designed shape the impulse wave and accurately measure the same. 
-        </p>
-        <div class="overview-text">
-        <h3><b>Applications</b></h3>
-        <ul class="flex">
-            <li> Used in generation of standard Lightning Impulses 1.2/50 µs </li>
-            <li>Used in generation or standard Switching Impulses 250/2500 µs</li>
-            <li>Used in generation of standard lightning and switching current impulses of 4/10, 8/20 µs
-</li>
-<li>Used in generation of non-standard impulses voltages & currents</li>
-<li>Used in generation of oscillatory impulse voltages
-</li>
-<li> Used as a wave damping resistor  </li>
-<li>Used as a discharge resistor for energy storage capacitors</li>
-<li>
-    Used in measurement of impulses as resistive dividers
-</li>
-<li>Used as a charging resistor to limit the capacitor charging current
-</li>
-<li>Used as a protection resistor to discharge the energy stored in impulse generator
-</li>
-        </ul>
-        </div>
-        </section>
-        <Section > 
-            <div class="box">
-                <p class="overview-text"><b>
-                    <h3>Typical Specifications Range of High Voltage Impulse Resistors:</h3>
-                </b></p>
-                <div class="overview-text">
-                        <span>
-                        <img [src]="img">
-                        </span>
-                </div>
-            </div>
-        </Section>
 
-         <Section> 
-            <div class="box">
-                <div class="row">
-                    <span class="overview-text"><h2><U>Ordering Specifications:</U></h2></span>
-                    <div class="col-md-5 mb-3">
-                        <div class="center-block">                    
-                        <span class="overview-text">
-                            <p><b>Purpose:</b>Impulse wave shaping  / DC Capacitor Charging  /  Capacitor Discharging  /  Grounding  / Current Limiting, etc.</p> 
-                            <p><b>Wave Shape:</b>Lightning Impulse, Switching Impulse, Lightning Current Impulse, DC, AC, etc.</p>
-                            <ul class="flex">
-                                <li>Resistance Value (Ω)</li>
-                                <li>Tolerance on Resistance: 1%, 2%, 3%, 4% & 5%</li>
-                                <li>Voltage (kV)</li>
-                                <li>Pulse Energy (kJ)</li>
-                                <li>Time between two impulses and duty cycle</li>
-                                <li>Continuous power in Watts for AC and DC application</li>
-                                <li>Operating medium: Air / Oil</li>
-                                <li>Resistor shape: Flat / Circular</li>
-                                <li>Terminal Specifications</li>
-                                <li>Environmental covering: Sleeve / Tape / Cast</li>
-                                <li>Resistor dimensional drawing</li>
-                            </ul>
-                        </span>
-                    </div>
-                    </div>
-                    <div class="col-md-1 mb-3">
-                          <div class="box-fit">
-                            <span>
-                         <img [src]="imgr" class="image-fluid">
-                         </span>  
-                          </div>
-                        
-                    </div>
-                </div>
-                
-                
-            </div>
-        </Section>
+<!-- ABOUT SECTION -->
+<section class="mission-section">
+  <div class="features-wrapper-overview">
+    <h2 class="">Overview</h2>
+    <div class="features-box-overview">    
+   <div class="left">
+     <p class="text-block-overview">
+      High Voltage Impulse Resistors are specialized components used in impulse voltage 
+and current testing systems to accurately shape and control the impulse waveform. 
+These resistors play a critical role in generating standard lightning and switching 
+impulse waves by forming the front and tail shaping networks of an impulse generator 
+circuit.
+    </p></div>
+    <div class="left"><p class="text-block-overview">
+     Carona Power designs and manufactures precision impulse resistors engineered to 
+withstand high voltage stress, high energy discharge, and repetitive impulse operation. 
+Our resistors ensure reliable waveform performance, stable resistance values, and long 
+service life under demanding high-voltage test conditions. 
+</p></div>
+  </div>
+  </div>
+</section>
 
+<div class="features-wrapper">
+  <h2 class="title">Key Features</h2>
 
-        
+  <div class="features-box">
+
+    <!-- Left Side -->
+    <div class="left">
+      <h3>Key Features</h3>
+      <ul>
+        <li>Low inductance design</li>
+        <li>High impulse energy tolerance</li>
+        <li>Precision resistance values</li>
+        <li>
+          Multiple terminal options including eyelets, threaded studs,
+          and quick-connect clamps
+        </li>
+        <li>Customizable physical form factor</li>
+      </ul>
+    </div>
+
+    <!-- Right Side Table -->
+    <div class="right">
+      <div class="table-scroll">
+  <table class="feature-table">
+
+    <thead>
+      <tr>
+        <th>Type of Resistor</th>
+        <th>Primary Function</th>
+        <th>Resistance Value</th>
+        <th>Energy Rating</th>
+        <th>Voltage Rating</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let row of tableData">
+        <td>{{ row.type }}</td>
+        <td>{{ row.function }}</td>
+        <td>{{ row.resistance }}</td>
+        <td>{{ row.energy }}</td>
+        <td>{{ row.voltage }}</td>
+      </tr>
+    </tbody>
+
+  </table>
 </div>
+    </div>
+
+  </div>
+</div>
+
+<section class="features-wrapper">
+ <div class="features-box">
+   <div class="applications">
+      <h3>Typical Applications</h3>
+      <ul>
+        <li>Standard Lightning Impulses 1.2/50 µs</li>
+        <li>Standard Switching Impulses 250/2500 µs </li>
+        <li>Standard Current impulses  4/10, 8/20 µs </li>
+        <li>Non-standard impulses voltages & currents</li>
+        <li>Oscillatory impulse voltages </li>
+        <li>Wave damping resistor </li>
+        <li>Discharge resistor for energy storage capacitors </li>
+        <li>Resistive dividers for Measurement</li>
+        <li>Charging resistor for current limiting </li>
+        <li>Protection resistor for safe discharging </li>
+      </ul>
+    </div>
+
+    <!-- Ordering Info -->
+    <div class="ordering">
+      <h3>Ordering Information</h3>
+      <ul>
+        <li>Application (Impulse wave shaping / DC Capacitor Charging / Capacitor Discharging 
+/ Grounding / Current Limiting) </li>
+        <li>Resistance Value (Ω) and Tolerance   </li>
+        <li>Voltage (kV) and Pulse Energy (kJ)  </li>
+        <li>Time between two impulses and duty cycle </li>
+        <li>Continuous power in Watts for AC and DC application </li>
+        <li>Operating medium: Air / Oil </li>
+        <li>Physical dimensions and mounting type </li>
+        <li>Terminal Specifications</li>
+        <li>Environmental covering: Sleeve / Tape / Cast </li>
+      </ul>
+    </div>
+
+ </div>
+</section>

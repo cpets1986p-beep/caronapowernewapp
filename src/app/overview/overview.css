@@ -78,3 +78,208 @@
   margin:5px;
   width: 98%;
 }
+
+
+.mission  {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #e0e0e0,
+    #e0e0e0 2px,
+    transparent 2px,
+    transparent 10px
+  );
+  padding: 20px;
+}
+.mission-section {
+  background:linear-gradient(
+135deg,
+#eff0f8,
+#eeeff8,
+#e9e9f8,
+#e9eaff
+);
+  padding: 20px;
+  margin-top: 10px; 
+}
+
+.mission-section h2 {
+  font-size: 32px;
+  color: #0c2c56;
+  text-align: left ;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 34px;
+  color: #0c2c56;
+  text-align: left ;
+  padding: 5px;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  color: #0c2c56;
+  text-align: left ;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* FOCUS GRID */
+.focus {
+  padding: 20px;
+}
+
+.focus h2 {
+  font-size: 32px;
+  color: #0c2c56;
+  text-align: left ;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.focus-grid-hv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 14px;
+  background: #eef3fb;
+  font-weight: 600;
+  color: #0c2c56;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+.card-hv {
+  padding: 20px;
+  border-radius: 14px;
+  background: #eef3fb;
+  font-weight: 600;
+  text-wrap-mode: nowrap;
+  color: #0c2c56;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.industries-section {
+  max-width: 700px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.industries-section h2 {
+  color: #1e3a5f;
+  margin-bottom: 20px;
+}
+
+.industries-section card {
+  align-items: center;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.industries-section card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: #2c5aa0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-right: 16px;
+}
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.industries-section h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2b3d5c;
+}
+
+.industries-section p {
+  margin: 4px 0 0;
+  color: #5a6b85;
+  font-size: 14px;
+}
+
+.hero {
+   height:520px;
+  width: 100%;
+  /* Light transparent overlay (same as design) */
+  background-image:url("/assets/images/IVG_Homepage.png");
+
+  background-size: cover;        /* KEY: makes it fill entire area */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;             /* full screen height */
+  display: flex;
+  align-items: center;
+
+  padding-left: 80px;
+}
+
+.hero-content {
+  padding: 30px;
+  border-radius: 26px;
+  backdrop-filter: blur(10px);
+}
+
+/* .hero-content h1 {
+  font-size: 50px;
+  color: #0c2c56;
+} */
+
+.hero-content p {
+  font-size: 26px;
+  margin: 15px 0;
+  color: #0c2c56;
+}
+
+.btn-primary {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #0c2c56;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 15px; 
+  text-decoration: none;
+}
+
+.headtext{
+  color:#0c2c56
+}

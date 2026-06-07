@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImageSlider } from './image-slider';
+import { ImpulseGeneratorSpares } from './impulse-generator-spares';
 
-describe('ImageSlider', () => {
-  let component: ImageSlider;
-  let fixture: ComponentFixture<ImageSlider>;
+describe('ImpulseGeneratorSpares', () => {
+  let component: ImpulseGeneratorSpares;
+  let fixture: ComponentFixture<ImpulseGeneratorSpares>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImageSlider]
+      imports: [ImpulseGeneratorSpares]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ImageSlider);
+    fixture = TestBed.createComponent(ImpulseGeneratorSpares);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

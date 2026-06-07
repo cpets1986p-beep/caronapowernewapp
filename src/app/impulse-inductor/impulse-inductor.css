@@ -1,141 +1,161 @@
-.hero-section {
-  background-color: white;
-  padding: 40px 20px;
-  border-radius: 0px;
-  text-align: center;
-  margin: 20px;
-}
-.ng-container {
-  margin: 0px;
-}
-.hero-text{
-  color: #014164;
-  font-size: 20px;
-  margin-top: 10px;
-}
-.about-section {
-  background-color: whitesmoke;
-  padding: 40px 20px;
-  border-radius: 0px;
-  margin: 0px;
-}
-.overview-shape {
-  float: left; /* Must be a floated element */
+/* HERO */
+.hero {
+  height:520px;
   width: 100%;
-  height: auto;
-  /* Optional: style the shape itself background-color: #f0f0f0; */
-  /* Text wraps around a circle shape-outside: circle(50%); */
-  /* Optional: make the shape visible as a circleborder-radius: 50%;  */
-  margin-right: 15px;
-}
-.overview-text {
-  text-align: justify;
-  font-size: 15px;
-  color: black;
-  
-}
+  /* Light transparent overlay (same as design) */
+  background-image:url("/assets/images/inductor.png");
 
-.md-content {
-  padding: 24px; }
-
-   .box {         
-            color:white;
-            padding:10px;
-            text-align:center;
-            border-style: inset;
-            width:97%;
-            height:50vp;
-            padding: 10px;
-         }
-         .green {
-            background:green;
-         }
-         
-         .blue {
-            background:blue;
-         }
-
-        .table{
-             display: table;
-        }
-        .center-block {
-             width: 98%; /* Or any specific width */
-             margin: 0  auto; /* Sets left and right margins to auto */
-        }
-.parent-container {
-  text-align: center; /* Centers all inline content horizontally */
-}
-
-.flex-container {
+ background-size: cover;        /* KEY: makes it fill entire area */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;             /* full screen height */
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically */
-  height: 300px;           /* Container needs a defined height for vertical centering to work */
-}
-.scrollable-content {
-  height: 300px; /* Set a fixed height */
-  overflow-y: auto; /* Add vertical scrollbar if content overflows */
-}
-
-.card-content{
-    max-width: 45%;
-}
-/* app.component.css */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.body{
-  padding-top:2px;
-  margin:5px;
-  width: 98%;
-}
-.background-container {
-  height: 20%; /* Sets height to full viewport height */
-  background-image: url('/assets/images/bg2.jfif'); /* Adjust path as needed */
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents image from repeating */
-  /* Add other styles like padding, margin, etc. */
-}
- .text-call {
   align-items: center;
-  font-weight: bold;
-  font-size: 20px;
-  color: #f8f9fa;
-  padding: 10px;
-  text-align: center;
-  width: 90%;
+
+  padding-left: 80px;
+}
+.hero-content {
+  padding: 5px;
+  position: absolute;
+  top: 150px;      /* decrease value to move up */
+  left: 80px; 
+  border-radius: 26px;
+  backdrop-filter: blur(3px);
+}
+
+/* .hero-content h1 {
+  font-size: 50px;
+  color: #0c2c56;
+} */
+
+.hero-content p {
+  font-size: 26px;
+  margin: 15px 0;
+  color: #0c2c56;
+}
+
+.btn-primary {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #0c2c56;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 15px; 
+  text-decoration: none;
+}
+
+.headtext{
+  color:#0c2c56
 }
 
 
-
-.highlight-card {
-  border-radius: 20px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  height: 250px;
+.overview-section {
+  padding: 40px;
+  background: #eef2f7;
 }
 
-.highlight-card:hover {
-  transform: scale(1.05);
+/* OVERVIEW */
+.overview h2 {
+  margin-bottom: 10px;
 }
 
-.highlight-img-wrapper {
+.overview p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* FEATURES + TABLE */
+.features-table {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* LEFT */
+.features-left {
+  flex: 1;
+}
+
+.features-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-left li {
+  margin-bottom: 10px;
+  padding-left: 20px;
   position: relative;
-  overflow: hidden;
 }
 
-.highlight-img-wrapper img {
-  width: 750px;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+.features-left li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4a6cf7;
 }
 
-.highlight-img-wrapper:hover img {
-  transform: scale(1.1);
+/* RIGHT TABLE */
+.features-right {
+  flex: 1.5;
+}
+
+.features-right table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+}
+
+.features-right th {
+  background: #d9deea;
+  padding: 10px;
+  text-align: left;
+}
+
+.features-right td {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/* BOTTOM SECTION */
+.bottom-section {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.applications, .ordering {
+  flex: 1;
+}
+
+.applications ul,
+.ordering ul {
+  list-style: none;
+  padding: 0;
+}
+
+.applications li,
+.ordering li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Icons */
+.applications li::before {
+  content: "⚙";
+  position: absolute;
+  left: 0;
+  color: #4a6cf7;
+}
+
+.ordering li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4a6cf7;
 }

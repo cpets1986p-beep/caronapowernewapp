@@ -1,11 +1,123 @@
 
-<div  class="body">
-  <section class="ng-container mb-2" >
-  <div class="content:object-fit">
-    <!-- <app-image-slider></app-image-slider> -->
-     <app-image-swiper></app-image-swiper>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "High Voltage Impulse Generator Service & Spares Support - Carona Power Electrical Test Systems",
+  "author": "Carona Power Electrical Test Systems",
+  "datePublished": "2026-02-21"
+}
+</script>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="headtext">Carona Power</h1>
+    <p>Pioneers in HV Impulse Test Support & Spares</p>
+
+    <button class="btn-primary" routerLinkActive="true" routerLink="/contact">Get in Touch</button>
+    
+    <a href="assets/brochures/Carona_Power_Brochure.pdf"
+   download="Carona_Power_Brochure.pdf"
+   class="btn-primary">
+   Download Brochure
+   </a>
   </div>
-  </section>
+</section>
+<!-- ABOUT SECTION -->
+<section class="about">
+  <div class="about-text">
+    <h2>About Carona Power</h2>
+
+    <p>
+      Carona Power Electrical Test Systems is an engineering firm based in Chikkaballapur, near Bangalore. We specialize in High Voltage Impulse Generator service, Repair,
+      Refurbishment, and Spares Support.
+    </p>
+    <p>
+      With deep industry experience in impulse voltage and current testing
+      systems, Carona Power supports customers who depend on reliable operation
+      of High Voltage Test Equipment for:</p>
+      <ul>
+        <li>Routine Testing</li>
+        <li>Type Testing</li>
+        <li>R&D Applications</li>
+      </ul>
+       <p>
+      We are committed to supporting High-Voltage Laboratories and Industrial facilities in achieving safe, compliant, and reliable impulse testing operations. 
+       </p>
+  </div>
+  <div class="about-image">
+
+    <swiper-container
+  navigation="true"
+  pagination="true"
+  autoplay-delay="3000">
+  <swiper-slide *ngFor="let img of images">
+    <img [src]="img.Src" alt="Slide image" />
+  </swiper-slide>
+</swiper-container>   
+  </div>
+</section>
+
+
+<!-- CORE TECHNICAL FOCUS -->
+<section class="focus">
+  <h2>Core Technical Focus Areas</h2>
+  <p class="subtitle">
+    We provide professional service support to restore system performance and
+    extend equipment life.
+  </p>
+
+  <div class="focus-grid">
+    <div class="card">High Voltage Impulse Voltage Generators</div>
+    <div class="card">High Voltage Impulse Current Generators</div>
+    <div class="card">Wave-Shaping Resistor</div>
+    <div class="card">Inductor Networks</div>
+    <div class="card">Service & Refurbishment of Legacy Systems</div>
+    <div class="card">Upgrade of Existing Impulse Test Equipment</div>
+    <div class="card">HV Laboratory Planning & Consultation</div>
+    <div class="card">PD Room Construction</div>
+    <div class="card">Training Operators for Routine Testing</div>
+  </div>
+</section>
+
+
+
+<!-- SERVICE SECTION -->
+<!-- <section class="service">
+  <h2>Impulse Generator Service & Repair</h2>
+  <p>
+    We are developing in-house manufacturing for critical impulse generator
+    components designed for high voltage stress and repetitive operation.
+  </p>
+</section> -->
+
+<!-- OUT Client-->
+<Section>
+  <div class="mat-card-header d-flex justify-content-center">
+    <div class="text-call">OUR CLIENTS</div>
+  </div>
+ <div class="marquee">
+<div class="marquee-content">
+  <div><img src="/assets/images/mahati.jfif" ></div>
+  <div><img src="/assets/images/elektrolites.jfif" ></div>
+  <div><img src="/assets/images/lamco.jfif" ></div>
+  <div><img src="/assets/images/nec.jfif" ></div>
+  <div><img src="/assets/images/vet.jfif" ></div>
+  <div><img src="/assets/images/raychem.jfif" ></div>  
+  <div><img src="/assets/images/mahati.jfif" ></div>
+  <div><img src="/assets/images/elektrolites.jfif" ></div>
+  <div><img src="/assets/images/lamco.jfif" ></div>
+  <div><img src="/assets/images/nec.jfif" ></div>
+  <div><img src="/assets/images/vet.jfif" ></div>
+  <div><img src="/assets/images/raychem.jfif" ></div> 
+</div>
+</div>
+<hr/>
+</Section> 
+
+<!-- <div  class="body">
+  
   
 <section class="ng-container hero-section">
   <div class="background-container">
@@ -96,10 +208,6 @@ insight</b> to deliver effective and reliable solutions.</p>
   </div>
   </div>
 </section>
-<!-- <Section>
-  <div class="mat-card-header">
-    <div class="text-call"> OUR CLIENTS</div>
-  </div> -->
   <Section>
   <div class="mat-card-header d-flex justify-content-center">
     <div class="text-call">OUR CLIENTS</div>
@@ -122,7 +230,7 @@ insight</b> to deliver effective and reliable solutions.</p>
 </div>
 <hr/>
 </Section> 
-</div>
+</div> -->
 
 
 <!-- <div class="container-load">

@@ -2,11 +2,12 @@
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
+@import 'swiper/swiper-bundle.css';
 
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%;margin:0;padding: 0; }
-body { color: #014164; margin: 0; font-family: 'Roboto', sans-serif; }
+body { color: #014164; margin: 0; font-family: 'Inter',sans-serif; }
 
 
 mat-nav-list.list-horizontal {
@@ -20,7 +21,7 @@ mat-nav-list.list-horizontal {
     font-weight: bold;
     text-decoration: #014164;
     text-align: center;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Inter',sans-serif;;
   }
 }
 .mat-mdc-menu-content {
@@ -35,6 +36,6 @@ mat-nav-list.list-horizontal {
   border-radius: 4px;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Inter',sans-serif; }
 
 /* styles.css */

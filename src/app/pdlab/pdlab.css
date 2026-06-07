@@ -1,0 +1,115 @@
+.overview-page {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* COMMON */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* BACKGROUND STYLE */
+.top-section,
+.middle-section {
+  background: linear-gradient(
+      rgba(235, 240, 250, 0.95),
+      rgba(235, 240, 250, 0.95)
+    ),
+    url('/assets/bg-texture.jpg');
+  background-size: cover;
+  padding: 50px 40px;
+}
+
+/* TOP SECTION */
+.top-section .left {
+  flex: 1;
+}
+
+.top-section .right {
+  flex: 1;
+}
+
+.top-section img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* TEXT */
+h2 {
+  font-size: 26px;
+  color: #1c2c5b;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #1c2c5b;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* MIDDLE SECTION */
+.left-img img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.right-content {
+  flex: 1;
+}
+
+/* LISTS */
+.arrow-list,
+.gear-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.arrow-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.arrow-list li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #1c4ed8;
+  font-weight: bold;
+}
+
+.gear-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.gear-list li::before {
+  content: "⚙";
+  position: absolute;
+  left: 0;
+  color: #1c4ed8;
+}
+
+/* SPACING */
+.mt {
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

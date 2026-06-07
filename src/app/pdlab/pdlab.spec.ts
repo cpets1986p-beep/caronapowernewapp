@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImageSwiper } from './image-swiper';
+import { Pdlab } from './pdlab';
 
-describe('ImageSwiper', () => {
-  let component: ImageSwiper;
-  let fixture: ComponentFixture<ImageSwiper>;
+describe('Pdlab', () => {
+  let component: Pdlab;
+  let fixture: ComponentFixture<Pdlab>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImageSwiper]
+      imports: [Pdlab]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ImageSwiper);
+    fixture = TestBed.createComponent(Pdlab);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
