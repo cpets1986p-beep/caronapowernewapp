@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {  CommonModule } from '@angular/common';
+import { SeoService } from '../shared/seo.service';
 @Component({
   selector: 'app-impulse-resistor',
   imports: [CommonModule],
@@ -7,6 +8,13 @@ import {  CommonModule } from '@angular/common';
   styleUrl: './impulse-resistor.css',
 })
 export class ImpulseResistor {
+  constructor(private seo: SeoService) {
+    this.seo.setMeta({
+      title: 'Impulse Resistors - Carona Power',
+      description: 'Specifications and applications for high voltage impulse resistors.',
+      keywords: 'impulse resistor, wave-shaping resistor, HV resistor'
+    });
+  }
   
 img=[
     '/assets/images/resistor.jpg'

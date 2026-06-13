@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SeoService } from '../shared/seo.service';
 
 @Component({
   selector: 'app-impulse-inductor',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './impulse-inductor.css',
 })
 export class ImpulseInductor {
+  constructor(private seo: SeoService) {
+    this.seo.setMeta({
+      title: 'Impulse Inductors - Carona Power',
+      description: 'Impulse inductor products and specifications for HV testing.',
+      keywords: 'impulse inductor, HV inductor'
+    });
+  }
 img=[
     '/assets/images/resistor.jpg'
   ]

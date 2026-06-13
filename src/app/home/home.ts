@@ -1,7 +1,7 @@
 import { Component, Inject, PLATFORM_ID, CUSTOM_ELEMENTS_SCHEMA,NgModule  } from '@angular/core';
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { register } from 'swiper/element/bundle';
-import { Meta, Title } from '@angular/platform-browser';
+import { SeoService } from '../shared/seo.service';
 import { RouterLink,RouterLinkActive } from '@angular/router';
 @Component({
   selector: 'app-home',
@@ -13,9 +13,12 @@ import { RouterLink,RouterLinkActive } from '@angular/router';
 })
 
 export class Home {
-  constructor(private meta: Meta, private title: Title, @Inject(PLATFORM_ID) private platformId: Object) {
-    this.title.setTitle('High Voltage Impulse Generator Service & Spares Support - Carona Power Electrical Test Systems');
-    this.meta.updateTag({ name: 'description', content: 'High Voltage Impulse Generator Service page' });
+  constructor(private seo: SeoService, @Inject(PLATFORM_ID) private platformId: Object) {
+    this.seo.setMeta({
+      title: 'High Voltage Impulse Generator Service & Spares Support - Carona Power Electrical Test Systems',
+      description: 'Carona Power provides service, repair, refurbishment and spares support for high voltage impulse generators.',
+      keywords: 'High Voltage, Impulse Generator, HV Testing, Impulse Resistor'
+    });
     if (isPlatformBrowser(this.platformId)) {
       register();
     }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {  CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { SeoService } from '../shared/seo.service';
 @Component({
   selector: 'app-products',
   imports: [CommonModule,RouterOutlet],
@@ -9,6 +10,13 @@ import { RouterOutlet } from '@angular/router';
 })
 
 export class Products {
+  constructor(private seo: SeoService) {
+    this.seo.setMeta({
+      title: 'Products - Carona Power',
+      description: 'Impulse resistors, inductors and generator spares. Product list and specifications.',
+      keywords: 'impulse resistors, impulse inductors, PD rooms'
+    });
+  }
   isInductor: boolean =false;
   img=[
     '/assets/images/resistor.jpg'

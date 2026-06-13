@@ -1,5 +1,5 @@
 import { Component,HostListener  } from '@angular/core';
-import { RouterLink,RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 
@@ -12,6 +12,12 @@ import { CommonModule } from '@angular/common';
 })
 export class Header {
  isScrolled = false;
+
+ constructor(private router: Router) {}
+
+ public navigateHome(): void {
+   this.router.navigate(['/home']);
+ }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
