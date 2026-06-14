@@ -14,7 +14,12 @@ export class Products {
     this.seo.setMeta({
       title: 'Products - Carona Power',
       description: 'Impulse resistors, inductors and generator spares. Product list and specifications.',
-      keywords: 'impulse resistors, impulse inductors, PD rooms'
+      ogTitle: 'Carona Power Products | Impulse Resistors, Inductors & Spares',
+      ogDescription: 'Explore Carona Power’s range of impulse resistors, inductors, generator spares, and PD room products.',
+      image: '/assets/images/impg.jfif',
+      url: '/products',
+      keywords: 'impulse resistors, impulse inductors, generator spares, PD room components, high voltage test equipment parts',
+      canonical: '/products'
     });
   }
   isInductor: boolean =false;

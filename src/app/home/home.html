@@ -53,7 +53,7 @@
   pagination="true"
   autoplay-delay="3000">
   <swiper-slide *ngFor="let img of images">
-    <img [src]="img.Src" alt="Slide image" />
+    <img [src]="img.Src" [alt]="img.alt" />
   </swiper-slide>
 </swiper-container>   
   </div>

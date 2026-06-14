@@ -13,7 +13,12 @@ constructor(private seo: SeoService, @Inject(PLATFORM_ID) private platformId: Ob
     this.seo.setMeta({
       title: 'Overview - Carona Power Electrical Test Systems',
       description: 'Overview of services and capabilities at Carona Power including HV impulse testing, PD rooms and lab planning.',
-      keywords: 'HV, overview, PD rooms, lab planning'
+      ogTitle: 'Carona Power Overview | HV Testing, PD Rooms, Lab Planning',
+      ogDescription: 'Learn about Carona Power’s high voltage testing services, PD room construction, and lab planning expertise.',
+      image: '/assets/images/HV1.jfif',
+      url: '/overview',
+      keywords: 'high voltage impulse testing, PD room planning, HV laboratory design, partial discharge measurement, impulse generator repair',
+      canonical: '/overview'
     });
   }
 }

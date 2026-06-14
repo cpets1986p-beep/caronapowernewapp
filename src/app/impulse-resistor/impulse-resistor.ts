@@ -12,7 +12,12 @@ export class ImpulseResistor {
     this.seo.setMeta({
       title: 'Impulse Resistors - Carona Power',
       description: 'Specifications and applications for high voltage impulse resistors.',
-      keywords: 'impulse resistor, wave-shaping resistor, HV resistor'
+      ogTitle: 'Impulse Resistors | Carona Power High Voltage Components',
+      ogDescription: 'High voltage impulse resistors for wave-shaping, damping, and protection in impulse test systems.',
+      image: '/assets/images/resator.jpg',
+      url: '/impulse-resistor',
+      keywords: 'impulse resistor, high energy resistor, wave shaping resistor, high voltage resistor, impulse test resistor',
+      canonical: '/impulse-resistor'
     });
   }
   

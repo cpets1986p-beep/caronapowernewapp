@@ -12,7 +12,12 @@ export class Pdlab {
     this.seo.setMeta({
       title: 'PD Rooms & Partial Discharge - Carona Power',
       description: 'Design and construction of PD rooms and partial discharge measurement services.',
-      keywords: 'PD room, partial discharge, HV labs'
+      ogTitle: 'PD Rooms & Partial Discharge Services | Carona Power',
+      ogDescription: 'PD room construction and partial discharge testing services for high voltage laboratories.',
+      image: '/assets/images/pdroom.jfif',
+      url: '/pdlab',
+      keywords: 'PD room design, partial discharge testing, high voltage laboratory planning, PD room construction, HV lab consulting',
+      canonical: '/pdlab'
     });
   }
 }

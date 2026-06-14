@@ -14,7 +14,8 @@ export class Notfound {
     this.seo.setMeta({
       title: '404 Not Found - Carona Power',
       description: 'The requested page could not be found.',
-      keywords: '404, not found'
+      keywords: '404, not found',
+      canonical: '/'
     });
   }
 

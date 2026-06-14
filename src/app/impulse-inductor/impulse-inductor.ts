@@ -12,7 +12,12 @@ export class ImpulseInductor {
     this.seo.setMeta({
       title: 'Impulse Inductors - Carona Power',
       description: 'Impulse inductor products and specifications for HV testing.',
-      keywords: 'impulse inductor, HV inductor'
+      ogTitle: 'Impulse Inductors | Carona Power HV Components',
+      ogDescription: 'Impulse inductors designed for high voltage impulse systems and laboratory applications.',
+      image: '/assets/images/ind1.jfif',
+      url: '/impulse-inductor',
+      keywords: 'impulse inductor, high voltage inductor, surge inductor, waveform shaping inductor, impulse test inductor',
+      canonical: '/impulse-inductor'
     });
   }
 img=[

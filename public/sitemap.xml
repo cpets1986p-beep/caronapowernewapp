@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace "https://www.example.com" with your production domain -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.caronapower.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.caronapower.com/home</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.caronapower.com/overview</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.caronapower.com/impulse-inductor</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.caronapower.com/impulse-resistor</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.caronapower.com/impulse-generator-spares</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.caronapower.com/pdlab</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.caronapower.com/contact</loc>
+    <priority>0.70</priority>
+  </url>
+</urlset>

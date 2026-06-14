@@ -19,7 +19,12 @@ export class Contact {
     this.seo.setMeta({
       title: 'Contact Us - Carona Power',
       description: 'Get in touch with Carona Power for HV impulse generator service, repair and spares support.',
-      keywords: 'contact, Carona Power, HV service'
+      ogTitle: 'Contact Carona Power | HV Impulse Service & Spares',
+      ogDescription: 'Reach out to Carona Power for high voltage impulse generator service, repair, and spare parts support.',
+      image: '/assets/images/Carona_Logo_Trans.png',
+      url: '/contact',
+      keywords: 'contact Carona Power, HV impulse support inquiry, impulse generator service request, high voltage testing consultation',
+      canonical: '/contact'
     });
   }
    @ViewChild('toastRef', { static: false }) toastRef!: ElementRef;

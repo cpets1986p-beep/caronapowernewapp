@@ -1,0 +1,9 @@
+# robots.txt for production
+# Update the Sitemap URL to match your production domain
+User-agent: *
+Allow: /
+
+# If you have private or staging paths, Disallow them here, e.g.:
+# Disallow: /staging/
+
+Sitemap: https://www.caronapower.com/sitemap.xml

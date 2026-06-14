@@ -238,7 +238,7 @@
    height:520px;
   width: 100%;
   /* Light transparent overlay (same as design) */
-  background-image:url("/assets/images/IVG_Homepage.png");
+  background-image:url("/assets/images/HVImpulseGeneratoroverview.png");
 
   background-size: cover;        /* KEY: makes it fill entire area */
   background-position: center;   /* keeps image centered */
@@ -254,7 +254,7 @@
 .hero-content {
   padding: 30px;
   border-radius: 26px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0px);
 }
 
 /* .hero-content h1 {

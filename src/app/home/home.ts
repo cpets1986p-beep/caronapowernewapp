@@ -17,7 +17,12 @@ export class Home {
     this.seo.setMeta({
       title: 'High Voltage Impulse Generator Service & Spares Support - Carona Power Electrical Test Systems',
       description: 'Carona Power provides service, repair, refurbishment and spares support for high voltage impulse generators.',
-      keywords: 'High Voltage, Impulse Generator, HV Testing, Impulse Resistor'
+      ogTitle: 'Carona Power | HV Impulse Generator Service & Spares',
+      ogDescription: 'High voltage impulse generator service, repair, refurbishment, and spares support from Carona Power.',
+      image: '/assets/images/hvimpulse.jfif',
+      url: '/home',
+      keywords: 'high voltage impulse generator service, impulse generator repair, impulse generator spares, HV testing support, high voltage lab service',
+      canonical: '/home'
     });
     if (isPlatformBrowser(this.platformId)) {
       register();
@@ -26,16 +31,19 @@ export class Home {
   images = [
     {
       ID: 1,
-      Src:'/assets/images/impGenCloseUp.png'
+      Src:'/assets/images/impGenCloseUp.png',
+      alt:'Impulse Generator Close Up'
     } 
     ,
      {
       ID: 2,
-      Src:'/assets/images/hvResistors.png'
+      Src:'/assets/images/hvResistors.png',
+      alt:'HV Resistors'
     }  ,
      {
       ID: 3,
-      Src:'/assets/images/tapResistor.png'
+      Src:'/assets/images/tapResistor.png',
+      alt:'Tap Resistor'
     } 
 
   ];
