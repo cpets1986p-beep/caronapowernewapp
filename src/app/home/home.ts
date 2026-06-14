@@ -28,6 +28,7 @@ export class Home {
       register();
     }
   }
+   
   images = [
     {
       ID: 1,
