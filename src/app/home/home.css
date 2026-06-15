@@ -490,3 +490,186 @@ background-repeat: no-repeat;
 .headtext{
   color:#0c2c56
 }
+
+/* RESPONSIVE DESIGN */
+/* TABLET (768px and below) */
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text h3 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .focus h2 {
+    font-size: 24px;
+  }
+
+  .focus-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .card {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 350px;
+    padding-left: 20px;
+    background-size: cover;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .service {
+    padding: 40px 20px;
+  }
+
+  .marquee-content img {
+    height: 60px;
+    margin: 0 30px;
+  }
+
+  .highlight-img-wrapper {
+    width: 200px;
+    height: 180px;
+  }
+}
+
+/* MOBILE PHONES (480px and below) */
+@media (max-width: 480px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .about-text h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about-text h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .slider-image {
+    height: 200px;
+  }
+
+  .focus {
+    padding: 10px;
+  }
+
+  .focus h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    padding: 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .hero {
+    height: 280px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-content {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .service {
+    padding: 20px 15px;
+  }
+
+  .service h2 {
+    font-size: 20px;
+  }
+
+  .marquee-content img {
+    height: 50px;
+    margin: 0 20px;
+  }
+
+  .highlight-img-wrapper {
+    width: 150px;
+    height: 140px;
+  }
+
+  .hidden-text {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .body {
+    padding-top: 0;
+    margin: 0;
+    width: 100%;
+  }
+}

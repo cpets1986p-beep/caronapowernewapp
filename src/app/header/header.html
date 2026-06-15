@@ -5,24 +5,25 @@
     <a (click)="navigateHome()" style="cursor: pointer;">
       <img src="assets/images/Carona_Logo_Trans.png" alt="Logo"/>
     </a>
-    <span>CARONA POWER</span>
+    <span class="logo-text">CARONA POWER</span>
   </div>
   
-  <nav class="nav-links">
+  <!-- Desktop Navigation -->
+  <nav class="nav-links desktop-nav">
     <a [routerLink]="['home']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-    <a  routerLink="/overview" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Overview</a>
-   <div class="dropdown" routerLinkActive="active">
-      <a data-bs-toggle="dropdown" aria-expanded="false" >
-       Products <i class="bi bi-caret-down-fill"></i></a>
-      <div class="dropdown-content" >
+    <a routerLink="/overview" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Overview</a>
+    <div class="dropdown" routerLinkActive="active">
+      <a data-bs-toggle="dropdown" aria-expanded="false">
+        Products <i class="bi bi-caret-down-fill"></i></a>
+      <div class="dropdown-content">
         <a routerLink="/impulse-resistor" routerLinkActive="active">Impulse Resistors</a>
         <a routerLink="/impulse-inductor" routerLinkActive="active">Impulse Inductors</a>
         <a routerLink="/impulse-generator-spares" routerLinkActive="active">Impulse Generator Spares</a>
         <a routerLink="/products" routerLinkActive="active">PD Rooms</a>
       </div>
     </div>
-     <div class="dropdown" routerLinkActive="active">
-      <a data-bs-toggle="dropdown" aria-expanded="false" >
+    <div class="dropdown" routerLinkActive="active">
+      <a data-bs-toggle="dropdown" aria-expanded="false">
         Services <i class="bi bi-caret-down-fill"></i></a>
       <div class="dropdown-content">
         <a routerLink="/repair" routerLinkActive="active">Repair</a>
@@ -30,6 +31,36 @@
       </div>
     </div>
     <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contact Us</a>
+  </nav>
+
+  <!-- Mobile Hamburger Menu -->
+  <button class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-links mobile-nav" *ngIf="menuOpen">
+    <a [routerLink]="['home']" routerLinkActive="active" (click)="closeMenu()">Home</a>
+    <a routerLink="/overview" routerLinkActive="active" (click)="closeMenu()">Overview</a>
+    <div class="mobile-dropdown">
+      <a (click)="toggleMenu()" class="dropdown-toggle">Products</a>
+      <div class="mobile-dropdown-content" *ngIf="menuOpen">
+        <a routerLink="/impulse-resistor" routerLinkActive="active" (click)="closeMenu()">Impulse Resistors</a>
+        <a routerLink="/impulse-inductor" routerLinkActive="active" (click)="closeMenu()">Impulse Inductors</a>
+        <a routerLink="/impulse-generator-spares" routerLinkActive="active" (click)="closeMenu()">Impulse Generator Spares</a>
+        <a routerLink="/products" routerLinkActive="active" (click)="closeMenu()">PD Rooms</a>
+      </div>
+    </div>
+    <div class="mobile-dropdown">
+      <a (click)="toggleMenu()" class="dropdown-toggle">Services</a>
+      <div class="mobile-dropdown-content" *ngIf="menuOpen">
+        <a routerLink="/repair" routerLinkActive="active" (click)="closeMenu()">Repair</a>
+        <a routerLink="/hv-lab-planning" routerLinkActive="active" (click)="closeMenu()">HV Lab Planning</a>
+      </div>
+    </div>
+    <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact Us</a>
   </nav>
 
   <button class="lang-btn" *ngIf="false">EN ⌄</button>

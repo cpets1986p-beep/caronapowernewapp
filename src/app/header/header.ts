@@ -1,47 +1,35 @@
-import { Component,HostListener  } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLinkActive,CommonModule,RouterLink],
+  imports: [RouterLinkActive, CommonModule, RouterLink],
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
 })
 export class Header {
- isScrolled = false;
+  isScrolled = false;
+  menuOpen = false;
 
- constructor(private router: Router) {}
+  constructor(private router: Router) {}
 
+  public navigateHome(): void {
+    this.router.navigate(['/home']);
+    this.menuOpen = false;
+  }
 
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
 
- public navigateHome(): void {
-   this.router.navigate(['/home']);
- }
+  closeMenu(): void {
+    this.menuOpen = false;
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 10; // threshold for shadow + blur
-    // const offset = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    // this.isScrolled = offset > 20; // threshold in pixels
-
+    this.isScrolled = window.scrollY > 10;
   }
-
-
-//   constructor(private viewportScroller: ViewportScroller) {}
-//   showHeader: boolean = true;
-// selectedItem: string | null = null;
-
-  // public scrollToSection(sectionId: string): void {
-  //   const element = document.getElementById(sectionId)!;
-  //   const navElement = document.getElementsByTagName('header')[0]!;
-
-  //   const navHeight = navElement.offsetHeight;
-
-  //   const targetPosition = element.getBoundingClientRect().top + window.scrollY;
-
-  //   this.viewportScroller.scrollToPosition([0, targetPosition - navHeight]);
-  // }
 }
