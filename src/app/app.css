@@ -16,6 +16,24 @@ body {
 	background: #f7f9fc;
 }
 
+img,
+picture,
+svg,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.hero,
+.hero-bg,
+.top-section,
+.background-container {
+	background-size: cover !important;
+	background-position: center !important;
+	background-attachment: scroll !important;
+}
+
 .site-header{
 	width:100%;
 	background:var(--header-bg);
