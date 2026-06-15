@@ -16,12 +16,7 @@ export class Header {
  constructor(private router: Router) {}
 
 
- downloadBrochure() {
-  const link = document.createElement('a');
-  link.href = '/assets/brochures/carona-power-brochure.pdf';
-  link.download = 'Carona-Power-Brochure.pdf';
-  link.click();
-}
+
  public navigateHome(): void {
    this.router.navigate(['/home']);
  }

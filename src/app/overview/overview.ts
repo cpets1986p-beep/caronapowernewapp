@@ -1,12 +1,14 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import {  CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { SeoService } from '../shared/seo.service';
 
 @Component({
   selector: 'app-overview',
-  imports: [CommonModule],
+  standalone: true,
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './overview.html',
-  styleUrl: './overview.css',
+  styleUrls: ['./overview.css'],
 })
 export class Overview {
 constructor(private seo: SeoService, @Inject(PLATFORM_ID) private platformId: Object) {
