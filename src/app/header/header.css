@@ -7,6 +7,11 @@ body {
 
 /* NAVBAR */
 .navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,8 +83,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 80px;
+  padding-top: 80px;
 }
 
 .hero-content {

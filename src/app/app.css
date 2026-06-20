@@ -20,9 +20,33 @@ img,
 picture,
 svg,
 video {
-	max-width: 100%;
-	height: auto;
+	max-width: 100% !important;
+	height: auto !important;
+	width: 100% !important;
 	display: block;
+}
+
+swiper-container,
+swiper-slide {
+	display: block;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.swiper-container,
+	.swiper-slide,
+	.swiper-slide img,
+	.product-card img,
+	.left-img img,
+	.top-section img,
+	.about-image img,
+	.slider-image img,
+	.highlight-img-wrapper img,
+	.marquee-content img {
+		width: 100% !important;
+		height: auto !important;
+		max-width: 100% !important;
+	}
 }
 
 .hero,
@@ -123,6 +147,22 @@ video {
 	.nav-links a{
 		padding:0.2rem 0.4rem;
 		font-size:0.8rem;
+	}
+
+	img,
+	picture,
+	svg,
+	video {
+		max-width: 100% !important;
+		height: auto !important;
+		width: auto !important;
+	}
+
+	.hero,
+	.hero-bg,
+	.top-section,
+	.background-container {
+		min-height: auto !important;
 	}
 }
 
