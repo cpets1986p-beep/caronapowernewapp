@@ -7,8 +7,8 @@ import { RouterLink,RouterLinkActive } from '@angular/router';
   selector: 'app-home',
   standalone: true,
   imports: [RouterLink,CommonModule,RouterLinkActive],
-  templateUrl: './home.html',
-  styleUrls: ['./home.css'],
+  templateUrl: './home-hv-engineering.html',
+  styleUrls: ['./home-hv-engineering.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 

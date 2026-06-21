@@ -16,7 +16,7 @@ export class Header {
   constructor(private router: Router) {}
 
   public navigateHome(): void {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/home-hv-engineering']);
     this.menuOpen = false;
   }
 
