@@ -443,6 +443,7 @@ background-repeat: no-repeat;
   font-weight: 600;
   color: #0c2c56;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 .card-hv {
   padding: 20px;

@@ -3,6 +3,7 @@ import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { register } from 'swiper/element/bundle';
 import { SeoService } from '../shared/seo.service';
 import { RouterLink,RouterLinkActive } from '@angular/router';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -13,7 +14,7 @@ import { RouterLink,RouterLinkActive } from '@angular/router';
 })
 
 export class Home {
-  constructor(private seo: SeoService, @Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(private seo: SeoService, @Inject(PLATFORM_ID) private platformId: Object,private router: Router) {
     this.seo.setMeta({
       title: 'High Voltage Impulse Generator Service & Spares Support - Carona Power Electrical Test Systems',
       description: 'Carona Power provides service, repair, refurbishment and spares support for high voltage impulse generators.',
@@ -28,18 +29,40 @@ export class Home {
       register();
     }
   }
+  navigateTo(section: string) {
+  switch(section) {
+    case 'resistor':
+      this.router.navigate(['/impulse-resistor']);
+      break;
+       case 'voltage-generator':
+      this.router.navigate(['/impulse-generator-spares']);
+      break;
+       case 'current-generator':
+      this.router.navigate(['/impulse-generator-spares']);
+      break;
+    case 'inductor':
+      this.router.navigate(['/impulse-inductor']);
+      break;
+    case 'service':
+      this.router.navigate(['/overview-hv-engineering']);
+      break;
+
+    default:
+      console.log(section);
+  }
+}
    
   images = [
     {
       ID: 1,
       Src:'/assets/images/impGenCloseUp.png',
-      alt:'Impulse Generator Close Up'
+      alt:'High voltage impulse voltage generator refurbishment'
     } 
     ,
      {
       ID: 2,
       Src:'/assets/images/hvResistors.png',
-      alt:'HV Resistors'
+      alt:'High voltage  Resistors'
     }  ,
      {
       ID: 3,

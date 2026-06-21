@@ -12,7 +12,7 @@
 <!-- HERO SECTION -->
 <section class="hero">
   <div class="hero-content">
-    <h1 class="headtext">Carona Power</h1>
+    <h1 class="headtext">High Voltage Impulse Generator Service, Spares & HV Test Solutions</h1>
     <p>Pioneers in HV Impulse Test Support & Spares</p>
 
     <div class="hero-actions">
@@ -70,15 +70,15 @@
   </p>
 
   <div class="focus-grid">
-    <div class="card">High Voltage Impulse Voltage Generators</div>
-    <div class="card">High Voltage Impulse Current Generators</div>
-    <div class="card">Wave-Shaping Resistor</div>
-    <div class="card">Inductor Networks</div>
-    <div class="card">Service & Refurbishment of Legacy Systems</div>
-    <div class="card">Upgrade of Existing Impulse Test Equipment</div>
-    <div class="card">HV Laboratory Planning & Consultation</div>
-    <div class="card">PD Room Construction</div>
-    <div class="card">Training Operators for Routine Testing</div>
+    <div class="card" (click)="navigateTo('voltage-generator')">High Voltage Impulse Voltage Generators</div>
+    <div class="card" (click)="navigateTo('current-generator')">High Voltage Impulse Current Generators</div>
+    <div class="card" (click)="navigateTo('resistor')">Wave-Shaping Resistor</div>
+    <div class="card" (click)="navigateTo('inductor')">Inductor Networks</div>
+    <div class="card" (click)="navigateTo('service')">Service & Refurbishment of Legacy Systems</div>
+    <div class="card" (click)="navigateTo('upgrade')">Upgrade of Existing Impulse Test Equipment</div>
+    <div class="card" (click)="navigateTo('lab-planning')">HV Laboratory Planning & Consultation</div>
+    <div class="card" (click)="navigateTo('pd-room')">PD Room Construction</div>
+    <div class="card" (click)="navigateTo('training')">Training Operators for Routine Testing</div>
   </div>
 </section>
 
